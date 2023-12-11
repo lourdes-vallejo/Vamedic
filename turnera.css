@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	background: #008036;
+}
+h1 {
+	padding: 1em;
+	text-align: center;
+	font-family: Agbalumo, cursive;
+	font-family: Rubik;
+	background: white;
+	color:#008036;
+}
+
+a {
+	text-decoration: none;
+	background: red;
+	color: white;
+}
+
+img {
+	width: 400px;
+}

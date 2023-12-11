@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h2 {
+	padding: 1em;
+	text-align: center;
+	font-family: Agbalumo, cursive;
+	font-family: Rubik;
+	color: white;
+	background:#008036;
+	text-align: center;
+}
+
+h3 {
+	margin: 1em;
+	padding: 1em;
+	text-align: center;
+}
+h6 {
+	margin: 50px;
+	padding: 50px;
+	display: inline-block;
+	text-align: center;
+	justify-content: space-between;
+	font-family: Agbalumo, cursive;
+	font-family: Rubik;
+	background:#008036;
+	color: #FFFFFF;
+	border-radius: 50px;
+}
+
+h4, h5, h6, h7 {
+	padding: 1em;
+	text-align: center;
+	font-family: Agbalumo, cursive;
+	font-family: Rubik;
+	color: white;
+	background:#008036;
+	text-align: center;
+}
+
+h5, h6, h7 {
+	font-size: 1em;
+}
+
+img {
+	width: 500px;
+}
+.div {
+	justify-content: space-between;
+}
+
