@@ -6,66 +6,123 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="imagenes/jpg" href="imagenes/favicon.ico">
 	<title>Vamedic</title>
-	<link rel="stylesheet" href="vamedic.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="estilos/vamedic.css">
 </head>
-<body>
-<header>
-	<section>
-	<nav>
-   <img src="imagenes/reform.png" alt="Bootstrap">
-   <ul class="opciones">
-      	        <li><a href="index.html">Inicio</a></li>
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="especialistas.html" role="button" data-bs-toggle="especialistas">Especialistas</a>
-					<ul class="especialistas-menu">
-					<li><a class="especialistas-menu" href="#" aria-expanded="false">Cardiología - Dr. Martínez (UBA)</a></li>	
-				</ul>
-				</li>
-				<li><a href="pacientes.html">Pacientes</a></li>
-				<li><a href="contactos.html">Contactos</a></li>
-				<li><a href="login.html">Registrarse</a></li>
-      <form class="d-flex" role="Buscar">
-        <input class="Buscar" type="search" placeholder="Buscar" aria-label="Buscar">
-        <button class="Buscar2" type="submit">Buscar</button>
-      </form>
-  </ul>
-</nav>	
-		</section>
-		</header>
-		<section>
-		<div class="sticky"><img src="imagenes/WhatsApp.png"></div>
 
-	<div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagenes/compromiso.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/dedicacion.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/profesionalismo.jpg" class="d-block w-100" alt="...">
+<body>
+
+<header>
+
+<section>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <img src="imagenes/reform.png" alt="Bootstrap">
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html">Nosotros</a></a>
+        </li>
+           <li class="nav-item">
+            <a class="nav-link" href="contactos.html">Contactos</a>
+        </li>
+        <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="especialistas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Especialistas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="especialistas.html">Especialistas</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item">Cardiología - Dr. Martínez (UBA)</a></li>
+            <li><a class="dropdown-item">Clínica - Dr. Vallejo (UNR)</a></li>
+            <li><a class="dropdown-item">Dermatología - Dr. D'Angelo (Hospital Italiano)</a></li>
+            <li><a class="dropdown-item">Diagnóstico por imágenes - Dr. Vallejo (UMAI)</a></li>
+            <li><a class="dropdown-item">Endocrinología - Dr. García (UNR)</a></li>
+            <li><a class="dropdown-item">Fonoaudiología - Lic. Sosa (UNR)</a></li>
+            <li><a class="dropdown-item" href="ginecologia.html">Ginecología - Dra. Buffa (UBA)</a></li>
+            <li><a class="dropdown-item">Neurología - Dr. Silveira (UBA)</a></li>
+            <li><a class="dropdown-item">Nutrición - Lic. De la Fuente (UNER)</a></li>
+            <li><a class="dropdown-item">Obstetricia - Lic. Goroz (UNER)</a></li>
+            <li><a class="dropdown-item">Oftalmología - Dr. Mercado (UBA)</a></li>
+            <li><a class="dropdown-item">Otorrinolaringología - Dra. Reinhardt (UAP)</a></li>
+            <li><a class="dropdown-item">Traumatología - Dr. Jmelnisky (Especialidad realizada en Francia)</a></li>
+            <li><a class="dropdown-item">Urología - Dr. Otegui (UNR)</a></li>  
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="pacientes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pacientes
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pacientes.html">Pacientes</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Historia clínica</a></li>
+            <li><a class="dropdown-item" href="#">Resultados</a></li>
+            <li><a class="dropdown-item" href="#">Turnos programados</a></li>
+            <li><a class="dropdown-item" href="#">Estado de cuenta</a></li>
+          </ul>
+        </li>
+          <form class="d-flex" role="search">
+        <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+        <div class="boton2">
+   <button type="button" class="btn btn-light">Buscar</button>
+ </div>
+   </form>
+     <section>
+  <div class="boton">
+<button type="button" class="btn btn-danger"><a href="login.html">Iniciar sesión</a></button>
+</div>
+</section>
+</div>
+  </div>
+</nav>
+</section>
+
+</header>
+
+		<section class="carousel">
+      <div class="row justify-content-center">
+    <div class="col-sm-8 col-sm-offset-2">
+    <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="imagenes">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/compromiso.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/dedicacion.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/profesionalismo.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/responsabilidad.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/trayectoria.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/vocacion.jpg" class="d-block" alt="...">
+        </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
-  <div class="carousel-item">
-      <img src="imagenes/responsabilidad.jpg.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/trayectoria.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/vocacion.jpg" class="d-block w-100" alt="...">
-    </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
+  </div>
+  </div>
 </section>
 
 <section>
@@ -76,14 +133,26 @@
 <h2><a href="os.html">Obras sociales</a></h2>
 </section>
 
+<div class="fixed"><img src="imagenes/WhatsApp.png">
+<p>
+  ¿En qué podemos ayudarle?
+</p>
+</div>
 <section>
 <h3>Encontranos en Google Maps<a href="https://www.google.com/maps/place/Vamedic/@-32.1763362,-59.4007338,17z/data=!3m1!4b1!4m6!3m5!1s0x95b169434d255555:0x1bdb703fbd5d0bc5!8m2!3d-32.1763362!4d-59.3981589!16s%2Fg%2F11ddwxdm24?entry=ttu">Google Maps</a></h3><br>
 <img src="imagenes/maps.png">
+
+  <div class="noticias">
+  Noticias:<br>
+  <img src="imagenes/noticia.png">
+  </div>
 </section>
 </body>
 <footer>
-	<br><address>vamedic@gmail.com</address>
+	<div class="dire1">
+  <br><address>vamedic@gmail.com</address>
 	<address>03445-467045</address>
+</div>
 	<address>Gualeguaychú 343 -  Maciá, Entre Ríos</address>
 	<div class="copy">
 	&copy Lourdes Vallejo

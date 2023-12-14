@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -26,18 +25,24 @@ h2 {
 	text-decoration: none;
 }
 
+img {
+	width: 100px;
+}
 h3 {
-	background: #008036;
-	text-align: center;
+	padding: 1em;
+	font-family: Agbalumo, cursive;
+	font-family: Rubik;
+	background:#008036;
+	color: white;
 }
 
 a {
 	text-decoration: none;
-	background: red;
 	color: white;
 }
 
-h2:hover {
-	background:#008036;
-	color: white;
+
+div {
+	text-align: center;
 }
+

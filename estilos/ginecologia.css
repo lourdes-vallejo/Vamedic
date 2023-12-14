@@ -17,6 +17,10 @@ h2 {
 	text-align: center;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
 h3 {
 	margin: 1em;
 	padding: 1em;
@@ -49,10 +53,47 @@ h5, h6, h7 {
 	font-size: 1em;
 }
 
+h7 {
+	border-radius: 10px;
+}
 img {
 	width: 500px;
 }
-.div {
+
+div {
+	margin: 1em;
+	display: flex;
 	justify-content: space-between;
 }
 
+@media (max-width: 576px) {
+	div {
+		display: block;
+	}
+
+	img {
+		width: 120%;
+	}
+}
+
+
+@media (min-width: 577px) and (max-width: 1000px) {
+	div {
+		display: block;
+	}
+
+	img {
+		width: 120%;
+	}
+}
+
+
+@media (max-width: 1001px) {
+	div {
+		display: block;
+	}
+
+	img {
+		width: 120%;
+	}
+}

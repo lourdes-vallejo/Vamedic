@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	padding: 20px;
+	font-family: Agbalumo, cursive;
+	font-family: Rubik;
+	text-align: center;
+	background:#008036;
+	color: #FFFFFF;
+}
+
+h2 {
+ 	color: #008036;
+ 	text-align: center;
+}
+
+form {
+	padding: 1em;
+	position: relative;
+	left: 38%;
+	right: 38%;
+	width: 20em;
+}
+ a {
+ 	text-decoration: none;
+ 	color:white;
+ }
+
+footer {
+	background: #008036;
+	text-align: center;
+}
+
+.listo {
+	margin: 1em;
+	text-align: center;
+}
+
+@media (max-width: 576px) {
+	form {
+	margin-left: -5em;
+	margin-right: 10em;
+  }  
+}
+
+@media (min-width: 577px) and (max-width: 1000px) {
+    form {
+    	margin-left: -5em;
+    	margin-right: 10em;
+    }
+}
+
+@media (max-width: 1001px) {
+
+	form {
+    	margin-left: -5em;
+    	margin-right: 10em;
+    }
+}
